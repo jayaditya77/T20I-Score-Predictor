@@ -90,19 +90,4 @@ The current requirements pin the tested package versions for reproducibility.
 5. writes the actual held-out metrics and model metadata to `artifacts/`.
 
 If the JSON archive is already extracted, the setup script does not download it again unless you delete `data/raw/t20s_json`.
-
-## What to say in an interview
-
-> I sourced men's T20 International ball-by-ball data from Cricsheet, parsed the raw JSON deliveries, engineered match-state and recent-form features, and trained XGBoost to predict remaining runs. I used a match-level holdout split to prevent leakage and a dedicated late-innings model for the final five overs. The Streamlit application validates the live match state, loads the trained artifacts, and displays held-out MAE, RMSE and R² from the training pipeline.
-
-Do not quote a metric unless it is the metric produced by the current trained artifacts. For the Cricsheet snapshot used during development, the recorded held-out metrics were MAE 15.16 runs, RMSE 20.89 runs, R² 0.806, and late-innings MAE 6.87 runs.
-
-## Source / attribution
-
-Cricsheet: https://cricsheet.org/
-
-Downloads: https://cricsheet.org/downloads/
-
-Format documentation: https://cricsheet.org/format/
-
-Please retain Cricsheet attribution when publishing or redistributing work produced from the dataset.
+\
