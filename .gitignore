@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Downloaded Cricsheet data and generated model artifacts
+/data/raw/*
+!/data/raw/.gitkeep
+/artifacts/*
+!/artifacts/.gitkeep
